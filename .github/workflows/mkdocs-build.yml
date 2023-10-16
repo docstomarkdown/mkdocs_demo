@@ -28,13 +28,9 @@ jobs:
       - name: Build MkDocs
         run: mkdocs build
 
-      - name: Mark github workspace as safe
+      - name: Commit and push changes to gh-pages
         run: |
-          git config --global --add safe.directory /github/workspace
-          
-      - name: push to destination branch
-        uses: ad-m/github-push-action@v0.5.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          directory: ./site
+          git checkout -b gh-pages
+          git add site  # Assuming the files are in the 'site' directory
+          git commit -m "Add/update files in the 'site' directory"
+          git push origin gh-pages
