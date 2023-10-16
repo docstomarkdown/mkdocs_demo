@@ -1,6 +1,6 @@
 # This post is to demonstrate images in Markdown
 
-Thisa
+This is a demo page to use mkdocs with git.
 
 
 ## Subheading 1
