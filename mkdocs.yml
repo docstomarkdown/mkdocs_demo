@@ -1,7 +1,0 @@
-site_name: My Mkdocs Demo Site
-nav:
-  - Home: index.md
-  - About: about.md
-  - Contact: contact.md
-theme: readthedocs
-site_dir: .
