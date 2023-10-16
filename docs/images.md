@@ -7,4 +7,4 @@ This is a demo page to use mkdocs with git.
 
 ![alt text](images/image_1.jpg)
 
-Image will be displayed from GitHub
+Image will be displayed from GitHub Test for the new actions. 
